@@ -29,7 +29,7 @@ When to open: starting a new project; auditing an existing one against the new f
 
 ### Deck 2. Placement.
 
-Names where each control runs along the stage-cost gradient. Every control has two costs — latency and resource — and both budgets expand as a change moves through the SSDLC. Controls fit a stage when both costs fit both budgets. Controls that fit multiple stages should run at the earliest one whose budgets they fit.
+Names where each control runs along the stage-cost gradient. Every control has two costs — elapsed time and resource — and both budgets expand as a change moves through the SSDLC. Controls fit a stage when both costs fit both budgets. Controls that fit multiple stages should run at the earliest one whose budgets they fit.
 
 When to open: deciding what runs at PR cadence versus release-candidate cadence; when someone proposes putting an expensive control too early in the pipeline; when AI-driven analysis needs to be placed against its real cost profile rather than vendor narrative.
 
