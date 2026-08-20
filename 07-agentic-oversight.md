@@ -7,7 +7,7 @@
 
 ## Why This Deck Exists
 
-The rest of the series already addresses AI in the SSDLC. The two-loop model puts AI inside Loop 1 (per-finding analysis, triage, reach reasoning) and inside Loop 2 (aggregate pattern detection). Placement covers where deep-analysis AI runs and at what cadence. None of that needs to be re-argued.
+The rest of the series already addresses AI in the SSDLC. The two-loop model puts AI inside the defect loop (per-finding analysis, triage, reach reasoning) and inside the portfolio loop (aggregate pattern detection). Placement covers where deep-analysis AI runs and at what cadence. None of that needs to be re-argued.
 
 What the series does not yet specify is the role of agentic AI as an oversight layer above the rest of the architecture. Continuous observation across the entire SSDLC, identification of miscalibration faster than human review cadence allows, and traceable handoff to humans who own the decision. This is a distinct role from the AI uses already named. It deserves its own treatment because the failure modes are different and the accountability boundary is different.
 
@@ -51,8 +51,8 @@ Sandbox-escape governance, breach response, and reporting obligations remain hum
 
 ## What This Enables
 
-With the oversight role in place and the handoff bounded as described, Loop 2 can operate at a cadence the threat landscape requires rather than the cadence human attention allows. Calibration decisions still happen at human cadence — quarterly, owned by security leadership, accountable as the thesis deck specifies. What changes is the set of conditions surfaced to that quarterly review. Instead of relying on humans to notice drift between reviews, the review starts with a queue of agent-surfaced conditions that have already been triaged for human attention, each accompanied by the trace that makes auditable decision possible.
+With the oversight role in place and the handoff bounded as described, the portfolio loop can operate at a cadence the threat landscape requires rather than the cadence human attention allows. Calibration decisions still happen at human cadence — quarterly, owned by security leadership, accountable as the thesis deck specifies. What changes is the set of conditions surfaced to that quarterly review. Instead of relying on humans to notice drift between reviews, the review starts with a queue of agent-surfaced conditions that have already been triaged for human attention, each accompanied by the trace that makes auditable decision possible.
 
-This is the form of AI integration the rest of the series has implicitly required without specifying. Loop 2 calibration cannot operate at the cadence the current threat landscape demands using human observation alone. Agentic oversight is what closes that gap, and the boundary on its role — observation and handoff, never decision — is what keeps the closure trustworthy.
+This is the form of AI integration the rest of the series has implicitly required without specifying. Portfolio-loop calibration cannot operate at the cadence the current threat landscape demands using human observation alone. Agentic oversight is what closes that gap, and the boundary on its role — observation and handoff, never decision — is what keeps the closure trustworthy.
 
 The deck closes here because the rest of the discipline is what the other decks already specify. How calibration decisions get made is in the thesis deck. Where AI fits in the placement gradient is in the placement deck. What the deterministic backbone owns is in tool properties. This deck adds one specific role to that architecture, with one specific accountability boundary, and lets everything else stay as the rest of the series argued for it.

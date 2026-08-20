@@ -15,28 +15,37 @@ subsidy. The tools will keep changing; the process discipline is the invariant.
 **Anchor documents**
 
 - [`ssdlc-thesis.md`](ssdlc-thesis.md) — the thesis and supporting argument: why the floor
-  rose, the two-loop model, the eight-phase reference frame, brownfield adaptation, and the
-  open questions carried into implementation.
+  rose, the two-loop model, the eight-phase reference frame, the collapsing cost of the
+  heavyweight phases, brownfield adaptation, and the open questions carried into implementation.
 - [`mythos-briefing.md`](mythos-briefing.md) — shared factual baseline on Claude Mythos and
   Project Glasswing that anchors the design decisions.
 
 **The deck series (companion documents)**
 
+One document per deck, `NN-*.md` matching `NN-*.pptx`.
+
 - [`00-reading-the-series.md`](00-reading-the-series.md) — the meta-guide: what each deck
   does and when to open it.
+- [`01-classification.md`](01-classification.md) — the classification practice: exposure and
+  project shape, six illustrative vectors on each axis, and re-classification triggers.
+- [`02-placement.md`](02-placement.md) — the stage-cost gradient and placing each control at
+  the earliest stage whose elapsed-time and resource budgets it fits.
+- [`03-tool-properties.md`](03-tool-properties.md) — the feedback architecture (findings out,
+  enrichments in) and the interface properties a tool must satisfy to participate in it.
+- [`04-tool-selection.md`](04-tool-selection.md) — matching products to the upstream
+  specification; the two selection profiles and multi-vendor reconciliation.
+- [`05-ai-roles.md`](05-ai-roles.md) — three simultaneous placements for AI (deep analysis,
+  continuous oversight, contextual triage) and the boundary on each.
 - [`06-economics.md`](06-economics.md) — the two cost components (generation cost down,
   response cost up) and the strategy that follows.
 - [`07-agentic-oversight.md`](07-agentic-oversight.md) — the oversight role for agentic AI
   and the traceable handoff to human decision-making.
 
-**Greenfield sections (illustrative, in progress)**
+**Presentation build**
 
-- [`classification-tight.md`](classification-tight.md) / [`classification-loose.md`](classification-loose.md)
-  — two drafts of the classification practice (exposure × project shape), a tighter and a
-  more expansive set of vectors, kept side by side for comparison.
-- [`placement.md`](placement.md) — placing controls along the stage-cost gradient.
-- [`thesis-addition.md`](thesis-addition.md) — the stage-cost gradient section intended for
-  insertion into `ssdlc-thesis.md`.
+- [`build-merged-deck.py`](build-merged-deck.py) — assembles `ssdlc-mythos-full.pptx` from the
+  individual decks, dropping Tool Selection for runtime and renumbering every footer. Edit the
+  `PLAN` list and re-run to cut slides; numbering follows automatically.
 
 ## Status
 

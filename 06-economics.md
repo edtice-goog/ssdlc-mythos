@@ -1,6 +1,8 @@
 # The Two Cost Components
 
 **Status:** Draft
+<!-- deck: number=06 | label=Economics | subtitle=Generation cost down. Response cost up. Two mandates, not one. | blurb=Names the economic structure so the security function can be funded against a clear frame. -->
+
 **Purpose:** Companion document for Deck 6 in the SSDLC in the Mythos Era series. Names the economic structure of the new environment so the CISO can have the conversation that follows.
 
 ---
@@ -14,24 +16,57 @@ The same capability class is driving up the cost of defending software. Adversar
 This deck names the two components and the strategy that follows from them. It does not motivate the threat picture (the thesis deck does that) and it does not specify the implementation (the rest of the series does that). It names the economic structure so that the security function can be funded and operated against a clear frame, rather than against the implicit frame of "hold the line at previous spend."
 
 ## The Cost Components
+<!-- slide: eyebrow=THE COMPONENTS | headline=Two cost components. They move in opposite directions. -->
 
 There are two, and they move in opposite directions.
 
-**Generation cost is going down.** Frontier-model-assisted development produces working code faster, with less human time per unit of output. The capture is uneven across teams and codebases, but the direction is settled. Organizations that adopt these tools competently realize the savings; organizations that do not, do not. The savings are not theoretical and they are not waiting for anyone.
+### Generation Cost
+<!-- col: arrow=down | icon=x-circle | style=plain -->
 
-**Response cost is going up.** The same capability class is in offensive use. Discovery yield is higher, exploit-chain construction that used to require expert attention is increasingly automated, disclosure waves are larger and faster, and the gap between disclosure and weaponization is shrinking. Each of those produces cost on the defensive side: more findings to triage, more patches to ship under tighter latency, more reachability and enrichment work to keep prioritization honest, more capacity required to absorb disclosure surges. None of these costs are negotiable at the source. The threat landscape sets the floor.
+- **More code per developer-hour.** AI-assisted development produces working code faster, with less
+  human time per unit of output.
+- **Adoption is competitive.** Organizations that integrate these tools competently realize the
+  savings. Those that do not, do not.
+- **Direction is settled.** Capture is uneven across teams and codebases, but the trajectory is not
+  in doubt and is not waiting on anyone.
 
-The two components are not coupled. Capturing more generation savings does not lower response cost. Spending more on response does not capture more generation savings. They are independent forces acting on the same P&L.
+### Response Cost
+<!-- col: arrow=up | icon=user-shield | style=accent -->
+
+- **Higher finding volume.** Discovery yield scales with offensive capability. Triage queues grow.
+  Reachability and enrichment work expands.
+- **Tighter patch latency.** The gap between disclosure and weaponization is shrinking. Response
+  windows that were quarters become days.
+- **Disclosure-wave capacity.** Published findings arrive in surges, not steadily. Defensive capacity
+  must absorb them or fall behind.
 
 ## The Strategy
+<!-- slide: eyebrow=THE STRATEGY | headline=Two mandates, owned by two different functions. -->
 
-Two mandates, owned by two different functions.
+The two components are not coupled. Capturing more generation savings does not lower response cost.
+Spending more on response does not capture more generation savings. They are independent forces
+acting on the same P&L.
 
-**Engineering's mandate is to capture.** This is what engineering already does. They adopt the tools, integrate them into the development loop, measure the productivity gains, and reinvest where the leverage is highest. The deck does not ask engineering to do anything they are not already motivated to do. Naming the capture as one half of the strategy makes it visible as part of the economic frame rather than as an unrelated productivity story.
 
-**Security's mandate is to operate efficiently under elevated response cost.** Not to suppress the cost — the threat landscape rules that out. Not to slow engineering's adoption of generation tools — that forfeits the savings without changing the threat picture, and it is not a credible posture for the function to hold. The mandate is efficient operation: which controls run where, which findings get which level of attention, where the deterministic backbone owns the work and where it does not, how the calibration loops keep defensive spend pointed at the right targets. The rest of the series specifies what that efficiency looks like in practice.
+### The Two Mandates
+<!-- col: icon=people | style=plain -->
 
-The strategy fails in two predictable ways. The first is treating engineering's capture and security's response as opposed — funding one at the expense of the other, or letting the security function become the brake on AI adoption rather than the discipline that makes adoption survivable. The second is treating response cost as suppressible through additional spending alone, without the discipline the rest of the series describes; this accelerates noise rather than reducing risk and raises response cost faster than the threat landscape would on its own.
+- **Engineering captures.** What engineering already does — adopt the tools, integrate them into the
+  development loop, reinvest the gains. No new mandate, just recognition of one half of the strategy.
+- **Security operates efficiently.** Not suppressing response cost; the threat landscape sets the
+  floor. Not slowing adoption; that forfeits savings without changing the threat.
+
+### Two Ways It Fails
+<!-- col: icon=x-circle | style=accent -->
+
+- **Treating the two as opposed.** Funding one at the expense of the other, or letting security become
+  the brake on adoption rather than the discipline that makes adoption survivable.
+- **Treating response cost as suppressible by spending.** Without the discipline, additional spend
+  accelerates noise rather than reducing risk.
+
+Efficient operation means which controls run where, which findings get which level of attention, where
+the deterministic backbone owns the work, and how the calibration loops keep defensive spend pointed at
+the right targets. The rest of the series specifies what that looks like in practice.
 
 ## The Division of Labor
 

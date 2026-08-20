@@ -1,2 +1,7 @@
 .DS_Store
 *.tmp
+
+# Decks are maintained outside git and regenerated from the markdown; see README
+*.pptx
+~$*
+.pptx-backup/
