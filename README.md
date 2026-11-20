@@ -47,6 +47,14 @@ One document per deck, `NN-*.md` matching `NN-*.pptx`.
   individual decks, dropping Tool Selection for runtime and renumbering every footer. Edit the
   `PLAN` list and re-run to cut slides; numbering follows automatically.
 
+## Separate work: the Opus 5.5 inflection
+
+Everything above is a prediction of how the market would be forced to respond to Mythos. The folder
+[`opus-5.5-inflection/`](opus-5.5-inflection/README.md) holds a separate, later prediction about a
+different inflection point: the fall in the cost of producing software after Opus 5.5 (September
+2026). It is kept apart so that each prediction can be judged on its own. The documents above have
+not been edited to match it.
+
 ## Status
 
 Draft working material. The durable claims (the floor has risen; the two loops; deterministic
